@@ -6,3 +6,5 @@ def homepage(reguests):
 def test(reguests):
     return render(reguests, "test.html")
 
+def second(reguest):
+    return HttpResponse("test 2 page")
