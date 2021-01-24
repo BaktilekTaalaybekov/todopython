@@ -20,3 +20,8 @@ def add_todo(reguest):
     todo = ToDo(text=text)
     todo.save()
     return redirect(test)
+
+def delete_todo(reguest, id):
+    todo = ToDo.objects.get(id=id)
+    todo.delete()
+    return redirect(test)
